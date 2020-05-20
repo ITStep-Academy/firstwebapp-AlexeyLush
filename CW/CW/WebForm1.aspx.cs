@@ -13,5 +13,12 @@ namespace CW
         {
 
         }
+
+        protected void ButtonClick(object sender, EventArgs e)
+        {
+            callLabel.Visible = true;
+            helloLabel.Text = $"Добрый день, {nameBox.Text}!";
+            helloLabel.Visible = true;
+        }
     }
 }
